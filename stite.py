@@ -4,7 +4,7 @@ from flask import render_template, Flask, request
 app = Flask(__name__, template_folder='template')
 
 
-@app.route('/index/', methods=['POST', 'GET'])
+@app.route('/test_site/', methods=['POST', 'GET'])
 @app.route('/', methods=['POST', 'GET'])
 def home():
     if request.method == 'POST':
